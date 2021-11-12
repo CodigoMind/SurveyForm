@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+    </style>
+    <title>Survey Form</title>
+</head>
+<body>
+    <header class="header">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill-opacity="1" d="M0,64L48,96C96,128,192,192,288,208C384,224,480,192,576,149.3C672,107,768,53,864,69.3C960,85,1056,171,1152,208C1248,245,1344,235,1392,229.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="block-text">
+            <h1 id="title">Marathon Survey Form</h1>
+        </div>
+    </header>
+    <h2 id="description">Thanks for helping us to improve our organization and service</h2>
+    <form id="survey-form">
+        <div class="element-form">
+            <label for="name" id="name-label">Name</label><br/>
+            <input type="text" id="name" name="username" placeholder="enter your name" required>
+        </div>
+        <div class="element-form">
+            <label for="email" id="email-label">Email</label><br/>
+            <input type="email" id="email" name="email" placeholder="enter your email" required>
+        </div>
+        <div class="element-form">
+            <label for="number" id="number-label">Age <span id="span-optional">(optional)</span> </label><br/>
+            <input type="number" name="age" id="number" min="5" max="100" placeholder="enter your age" >
+        </div>
+        <div class="element-form">
+            <label for="dropdown">What are your preferences of distances for a marathon?</label><br/>
+            <select name="dropdown" id="dropdown">
+                <option value="5K">5K</option>
+                <option value="10K">10K</option>
+                <option value="15K">15K</option>
+                <option value="20K">20K</option>
+                <option value="41K">41K</option>
+            </select>
+        </div>
+        <div class="element-form">
+            <p>What do you think of the quality of the organization in the marathon?</p>
+            <input type="radio" id="qualityForm1" value="Excelent" name="quality">
+            <label for="qualityForm1">Excelent</label>
+            <input type="radio" id="qualityForm2" value="Good" name="quality">
+            <label for="qualityForm2">Good</label>
+            <input type="radio" id="qualityForm3" value="Intermediate" name="quality">
+            <label for="qualityForm3">Intermediate</label>
+            <input type="radio" id="qualityForm4" value="Bad" name="quality">
+            <label for="qualityForm4">Bad</label>
+        </div>
+        <div class="element-form">
+            <p>What do you think could be a good prize for the marathon winner?</p>
+            <input type="checkbox" name="prize" value="Sportswear" id="prizeForm1">
+            <label for="prizeForm1">Sportswear</label>
+            <input type="checkbox" name="prize" value="Medal" id="prizeForm2">
+            <label for="prizeForm2">Medal</label>
+            <input type="checkbox" name="prize" value="Money" id="prizeForm3">
+            <label for="prizeForm3">Money</label>
+            <input type="checkbox" name="prize" value="Trophy" id="prizeForm4">
+            <label for="prizeForm4">Trophy</label>
+        </div>
+        <div class="element-form">
+            <label for="comments">Any comments or suggestions?</label><br/>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+        <div class="element-form">
+            <input type="submit" name="send-comments" id="submit" value="Submit">
+        </div>
+    </form>
+    <footer>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill-opacity="1" d="M0,64L48,96C96,128,192,192,288,208C384,224,480,192,576,149.3C672,107,768,53,864,69.3C960,85,1056,171,1152,208C1248,245,1344,235,1392,229.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </footer>
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
