@@ -18,19 +18,19 @@
             <h1 id="title">Marathon Survey Form</h1>
         </div>
     </header>
-    <h2 id="description">Thanks for helping us to improve our organization and service</h2>
+    <p id="description">Thanks for helping us to improve our organization and service</p>
     <form id="survey-form">
         <div class="element-form">
             <label for="name" id="name-label">Name</label><br/>
-            <input type="text" id="name" name="username" placeholder="enter your name" required>
+            <input type="text" id="name" name="username" placeholder="Enter your name" required>
         </div>
         <div class="element-form">
             <label for="email" id="email-label">Email</label><br/>
-            <input type="email" id="email" name="email" placeholder="enter your email" required>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
         </div>
         <div class="element-form">
             <label for="number" id="number-label">Age <span id="span-optional">(optional)</span> </label><br/>
-            <input type="number" name="age" id="number" min="5" max="100" placeholder="enter your age" >
+            <input type="number" name="age" id="number" min="5" max="100" placeholder="Enter your age" >
         </div>
         <div class="element-form">
             <label for="dropdown">What are your preferences of distances for a marathon?</label><br/>
@@ -45,30 +45,30 @@
         <div class="element-form">
             <p>What do you think of the quality of the organization in the marathon?</p>
             <input type="radio" id="qualityForm1" value="Excelent" name="quality">
-            <label for="qualityForm1">Excelent</label>
+            <label for="qualityForm1">Excelent</label><br/>
             <input type="radio" id="qualityForm2" value="Good" name="quality">
-            <label for="qualityForm2">Good</label>
+            <label for="qualityForm2">Good</label><br/>
             <input type="radio" id="qualityForm3" value="Intermediate" name="quality">
-            <label for="qualityForm3">Intermediate</label>
+            <label for="qualityForm3">Intermediate</label><br/>
             <input type="radio" id="qualityForm4" value="Bad" name="quality">
-            <label for="qualityForm4">Bad</label>
+            <label for="qualityForm4">Bad</label><br/>
         </div>
         <div class="element-form">
             <p>What do you think could be a good prize for the marathon winner?</p>
             <input type="checkbox" name="prize" value="Sportswear" id="prizeForm1">
-            <label for="prizeForm1">Sportswear</label>
+            <label for="prizeForm1">Sportswear</label><br/>
             <input type="checkbox" name="prize" value="Medal" id="prizeForm2">
-            <label for="prizeForm2">Medal</label>
+            <label for="prizeForm2">Medal</label><br/>
             <input type="checkbox" name="prize" value="Money" id="prizeForm3">
-            <label for="prizeForm3">Money</label>
+            <label for="prizeForm3">Money</label><br/>
             <input type="checkbox" name="prize" value="Trophy" id="prizeForm4">
-            <label for="prizeForm4">Trophy</label>
+            <label for="prizeForm4">Trophy</label><br/>
         </div>
         <div class="element-form">
             <label for="comments">Any comments or suggestions?</label><br/>
-            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <textarea name="comments" id="comments" rows="10" placeholder="Enter your comments"></textarea>
         </div>
-        <div class="element-form">
+        <div class="element-form" id="container-button">
             <input type="submit" name="send-comments" id="submit" value="Submit">
         </div>
     </form>
